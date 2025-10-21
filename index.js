@@ -30,10 +30,10 @@ const app = express ();
 
 app.use(express.static("public"));
 //first route
-// app.get("/", (request,response) => {
-//     console.log("A request was made to the '/' route!");
-//     response.send("HELLO CLASS!!!");
-// });
+app.get("/", (request,response) => {
+    console.log("A request was made to the '/' route!");
+    response.send("HELLO CLASS!!!");
+});
 
 app.get("/data", (request, response) => {
   console.log("A request to the data route");
